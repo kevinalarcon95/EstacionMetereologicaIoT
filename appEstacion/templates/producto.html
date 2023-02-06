@@ -1,4 +1,4 @@
-{% extends "template.html" %} {% block title %} Producto {% endblock %} 
+{% extends "index.html" %} {% block title %} Producto {% endblock %} 
 
 {% block content %}
 <div class="container">
@@ -72,8 +72,8 @@
       src="https://thingspeak.com/channels/2013672/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
     ></iframe>
   </div> {% endcomment %}
-  <div class="row m-5">
-    <h1>Indice de calidad del aire (ICA)</h1>
+  <div class="row m-5 text-start">
+    <h3 class="fw-bold">Indice de calidad del aire (ICA)</h3>
     <p>
       El valor del índice de la calidad del aire ICA se mide en una escala que va desde  0 y >500 y que establece seis categorías de peligrosidad, de modo que cuanto mayor sea el índice, peor será la calidad del aire.
       A nivel cualitativo, el rango del ICA está dividido en seis tramos: 
@@ -87,55 +87,63 @@
       </ul>
     </p>
   </div>
-  <div class="row mx-5 mt-4">
-    <h2 class="fw-bold my-5 text-center" style="color: #2a8947">
-      Funcionamiento
-    </h2>
-    <iframe
-      width="560"
-      height="460"
-      src="https://www.youtube.com/embed/PZhRtWQXbjI"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+  <div class="row mx-5 mt-4" style="text-align: justify;">
+          <div class="row mb-5">
+            <div class="col-md-12">
+              <div class="about__text mb-5 mb-sm-4 mb-md-4">
+                <h3 class="fw-bold">Hardware</h3>
+                <p class="m-0">Durante y para el desarrollo de este producto se vieron involucrados diferentes aspectos tanto técnicos, de software como hardware. Dentro de las diferentes técnicas involucradas como desarrolladores resaltamos la alta cohesión y el bajo acoplamiento que permita en un futuro la continuidad del mismo con el fin de adaptaciones o evolución del producto final.Finalmente para la producción encontramos los siguientes elementos:</p>
+              </div>
+              <div class="about__skills">
+                <div class="row no-gutters mb-0 mb-sm-4">
+                  <div class="mb-4 mb-sm-0 pr-sm-3 col-sm-6">
+                      <div class="media-body">
+                        <h4 class="m-0">ESP8266</h4>
+                        <p class="m-0">Se trata de un chip integrado con conexión WiFi y compatible con el protocolo TCP/IP. El objetivo principal es dar acceso a cualquier microcontrolador a una red.</p>
+                      </div>
+                  </div>
+                  <div class="mb-4 mb-sm-0 pl-sm-3 col-sm-6 ">
+                        <h4 class="m-0">Protoboard</h4>
+                        <p class="m-0">Las protoboard son una herramienta fundamental en el ámbito de la electrónica. Básicamente, es una caja de plástico con orificios conectados entre sí, que permite crear un circuito sin necesidad de soldar cables o componentes.</p>
+                    </div>
+                </div>
+
+                <div class="row no-gutters mb-0 mb-sm-4">
+                  <div class="mb-4 mb-sm-0 pr-sm-3 col-sm-6">
+                        <div class="media-body">
+                        <h4 class="m-0">Sensor MQ135</h4>
+                        <p class="m-0">El MQ-135 es un sensor de gases peligrosos utilizado para el control de la calidad del aire y es adecuado para la detección de NH3 (amoníaco), NOx, alcohol, benceno, humo, CO2, etc. Este sensor no proporciona valores absolutos, sino que simplemente proporciona una salida analógica que debe ser monitoreado y se comparada con los valores de umbral.</p>
+                      </div>
+                  </div>
+                  <div class="mb-0 pl-sm-3 col-sm-6">
+                      <div class="media-body">
+                        <h4 class="m-0">Fuente para protoboard</h4>
+                        <p class="m-0">Este módulo posee salidas de 3.3V y 5V, posee un regulador para cada voltaje, Estos voltajes se seleccionan con jumpers. La entrada de voltaje al módulo puede ser por el conector Jack o a través del conector USB. Si se usa el conector Jack, el conector USB se puede utilizar como salida de 5V. Permite alimentar un protoboard mediante plug a un transformador de pared hasta 12v. Proporciona dos salidas independientes que son seleccionables mediante jumpers y permiten suministrar 5V o 3.3V. Cuenta además con salida de 5V por conector USB. </p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="row no-gutters mb-0 mb-sm-4">
+                  <div class="mb-4 mb-sm-0 pr-sm-3 col-sm-6">
+                        <div class="media-body">
+                        <h4 class="m-0">Cables Jumpers</h4>
+                        <p class="m-0">Los cables DuPont o jumper 's son prácticos y útiles para realizar conexiones en una placa de pruebas (protoboard), realizar conexiones entre módulos y tarjetas de desarrollo, además eso, también puede usar los cables macho-macho como una extensión. </p>
+                      </div>
+                  </div>
+                  <div class="mb-0 pl-sm-3 col-sm-6">
+                      <div class="media-body">
+                        <h4 class="m-0">Fuente para protoboard</h4>
+                        <p class="m-0">Este módulo posee salidas de 3.3V y 5V, posee un regulador para cada voltaje, Estos voltajes se seleccionan con jumpers. La entrada de voltaje al módulo puede ser por el conector Jack o a través del conector USB. Si se usa el conector Jack, el conector USB se puede utilizar como salida de 5V. Permite alimentar un protoboard mediante plug a un transformador de pared hasta 12v. Proporciona dos salidas independientes que son seleccionables mediante jumpers y permiten suministrar 5V o 3.3V. Cuenta además con salida de 5V por conector USB. </p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
-  <div class="row mx-5 mt-4" style="text-align: justify">
-    <h4 class="fw-bold">Hardware</h4>
-    <div class="col-6">
-      <p>
-        Protoboard: Las protoboard son una herramienta fundamental en el ámbito de la electrónica. Básicamente, es una caja de plástico con orificios conectados entre sí, que permite crear un circuito sin necesidad de soldar cables o componentes. También se llaman
-        breadboards o placa de circuitos. Son estupendas para diseñar y testear tus circuitos antes de lanzarte a fabricar un circuito impreso permanente(PCB).Para que el circuito funcione sobre una protoboard, tan solo se tienen que insertar los componentes
-        en los pequeños orificios de contacto y unirlos con cables. Como los componentes no están soldados se puede cambiar el diseño de los circuitos siempre que se requiera.
-    </p>
-    </div>
-    <div class="col-6 text-center">
-      <img src="../static/img/protoboard.jpg" alt="..." height="250px" />
-      <h6>Img. Protoboard</h6>
-    </div>
-  </div>
-  <div class="row mx-5 mt-4">
-    <div class="col-6">
-      One of three columns
-    </div>
-    <div class="col-6">
-      <p>
-        Fuente para protoboard: Este módulo posee salidas de 3.3V y 5V, posee un regulador para cada voltaje, Estos voltajes se seleccionan con jumpers. La entrada de voltaje al módulo puede ser por el conector Jack o a través del conector USB. Si se usa el conector
-        Jack, el conector USB se puede utilizar como salida de 5V. Permite alimentar un protoboard mediante plug a un transformador de pared hasta 12v. Proporciona dos salidas independientes que son seleccionables mediante jumpers y permiten suministrar 5V
-        o 3.3V. Cuenta además con salida de 5V por conector USB.
-    </p>
-    </div>
-  </div>
-  
 </div>
 
 <style>
-  body {
-      font-family: monospace;
-      background-color: rgb(255,255, 255);
-  }
-
   .barraTemp{
       height: 200px;
       width: 200px;
@@ -170,6 +178,8 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+
 </style>
 
 
